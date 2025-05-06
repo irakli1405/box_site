@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-page">
+    <div class="welcome-message">
+      <h1>Create an Account</h1>
+      <p>Join the fight! Register to access exclusive gear, fighter updates, and events.</p>
+    </div>
+    <form class="login" onsubmit="redirectToLogin(event)">
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script>
+    function redirectToLogin(e) {
+      e.preventDefault()
+      window.location.href = 'welcome.html'
+    }
+  </script>
+</body>
+</html>

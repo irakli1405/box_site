@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-page">
+    <div class="welcome-message">
+      <h1>Welcome to the Boxing Store</h1>
+      <p>Please log in to access your account and explore top boxing gear, events, and fighters.</p>
+    </div>
+    <form class="login" onsubmit="redirectToWelcome(event)">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <button type="button" onclick="redirectToRegister()">Register</button>
+    </form>
+  </div>
+
+  <script>
+    function redirectToWelcome(e) {
+      e.preventDefault()
+      window.location.href = 'welcome.html'
+    }
+
+    function redirectToRegister() {
+      window.location.href = 'register.html'
+    }
+  </script>
+</body>
+</html>
